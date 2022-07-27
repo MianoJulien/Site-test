@@ -6,12 +6,16 @@
 body {
   background: rgb(255, 213, 220);
   position: relative;
+  height: 120vh;
 }
 
 h1 {
   text-transform: uppercase;
   text-align: center;
   margin: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: apparition 0.8s 1.2s ease-in-out forwards;
 }
 
 p {
@@ -31,4 +35,17 @@ p {
   width: 150px;
   background: rgb(199, 255, 176);
   margin: auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgba(198, 255, 176, 0.688);
+  color: rgba(0, 0, 0, 0.692);
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
