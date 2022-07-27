@@ -10,9 +10,17 @@ body {
 }
 
 h1 {
+  min-width: 300px;
+  max-width: 1000px;
+  width: 90%;
   text-transform: uppercase;
   text-align: center;
-  margin: 10px;
+
+  border: 2px solid teal;
+  border-radius: 300px;
+  background: rgb(255, 193, 203);
+  box-shadow: 2px 3px 7px #0000005c;
+  margin: 10px auto;
   opacity: 0;
   transform: translateY(-20px);
   animation: apparition 0.8s 0.2s ease-in-out forwards;
@@ -20,8 +28,17 @@ h1 {
 
 p {
   height: 300px;
-  width: 100vh;
+  min-width: 300px;
+  max-width: 1000px;
+  width: 90%;
   margin: 50px auto;
+  padding: 20px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: apparition 0.8s 0.4s ease-in-out forwards;
 }
 .container-button {
   height: 50px;
@@ -34,11 +51,16 @@ p {
   height: 50px;
   width: 150px;
   background: rgb(199, 255, 176);
+  border: 2px solid teal;
+  border-radius: 300px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 2px 3px 7px #0000005c;
   margin: auto;
   cursor: pointer;
   opacity: 0;
   transform: translateX(-200px);
-  animation: apparition 0.8s 0.4s ease-in-out forwards;
+  animation: apparition 0.8s 0.6s ease-in-out forwards;
 }
 
 .button:hover {
@@ -50,5 +72,14 @@ p {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .button {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    margin: 20px 20px;
   }
 }
