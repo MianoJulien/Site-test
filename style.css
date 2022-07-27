@@ -15,7 +15,7 @@ h1 {
   margin: 10px;
   opacity: 0;
   transform: translateY(-20px);
-  animation: apparition 0.8s 1.2s ease-in-out forwards;
+  animation: apparition 0.8s 0.2s ease-in-out forwards;
 }
 
 p {
@@ -36,6 +36,9 @@ p {
   background: rgb(199, 255, 176);
   margin: auto;
   cursor: pointer;
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: apparition 0.8s 0.4s ease-in-out forwards;
 }
 
 .button:hover {
