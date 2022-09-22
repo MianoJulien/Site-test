@@ -2,9 +2,12 @@
 // ======================
 const total = 0;
 
-const calculateAverageRating = (number) => {};
-
-calculateAverageRating(tauRatings);
+const calculateAverageRating = (num) => {
+  for (let number of num) {
+    console.log(number);
+    return;
+  }
+};
 
 // ======================
 
