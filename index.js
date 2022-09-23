@@ -2,11 +2,15 @@
 // ======================
 const total = 0;
 
-const calculateAverageRating = (num) => {
-  for (let number of num) {
-    console.log(number);
-    return;
+const calculateAverageRating = (ratings) => {
+  if (ratings.length === 0) {
+    return 0;
   }
+  let sum = 0;
+  for (let rating of ratings) {
+    sum += rating;
+  }
+  return sum / ratings.length;
 };
 
 // ======================
